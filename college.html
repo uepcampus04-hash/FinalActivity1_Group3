@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges - University of Eastern Pangasinan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #002B5B; /* Matching your dark blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .college-card {
+            background: white;
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .college-card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .college-info {
+            padding: 20px;
+        }
+        .college-info h2 {
+            color: #002B5B;
+            margin-top: 0;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #002B5B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Enrollment Form Styling */
+        .enrollment-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .enrollment-container h2 {
+            color: #002B5B;
+            border-bottom: 2px solid #002B5B;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .enroll-submit {
+            background-color: #002B5B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #success-notice {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #c3e6cb;
+            font-weight: bold;
+        }
+
+        /* UPDATED FOOTER STYLING TO MATCH IMAGE */
+        .footer {
+            background-color: #1a1a1a; /* Dark grey/black background */
+            color: #b3b3b3; /* Light grey text */
+            padding: 60px 20px 30px 20px;
+            margin-top: 50px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1100px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        .footer-col {
+            margin-bottom: 30px;
+            min-width: 200px;
+        }
+        .footer-col h3 {
+            color: #ffcc00; /* Yellow/Gold header */
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .footer-bottom p {
+            color: #ffffff;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Colleges of UEP</h1>
+</header>
+
+<div class="container">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <div class="college-card">
+        <img src="1.jpg.jpg" alt="College of Accountancy">
+        <div class="college-info">
+            <h2>College of Accountancy</h2>
+            <p>A College of Accountancy is a department or school in a university that focuses on teaching students how to manage, record, and analyze financial information, preparing them for careers in accounting, auditing, and finance.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="2.jpg.jpg" alt="College of Business Education">
+        <div class="college-info">
+            <h2>College of Business Education</h2>
+            <p>A College of Business Education is a part of a university that teaches students the skills and knowledge needed for business, such as management, marketing, finance, and entrepreneurship, preparing them for careers in the business world.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="3.jpg.jpg" alt="College of Criminal Justice Education">
+        <div class="college-info">
+            <h2>College of Criminal Justice Education</h2>
+            <p>A College of Criminal Justice Education is a part of a university that prepares students for careers in law enforcement and public safety by teaching about laws, crime prevention, investigation, and the justice system.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="4.jpg.jpg" alt="College of Engineering">
+        <div class="college-info">
+            <h2>College of Engineering</h2>
+            <p>A College of Engineering is a part of a university that teaches students how to design, build, and improve structures, machines, and systems, preparing them for careers in fields like civil, mechanical, electrical, and computer engineering.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="5.jpg.jpg" alt="College of Hospitality Management">
+        <div class="college-info">
+            <h2>College of Hospitality Management</h2>
+            <p>A College of Hospitality Management is a part of a university that trains students for careers in the service industry, focusing on skills in hotel management, tourism, food service, and customer care.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="6.jpg.jpg" alt="College of Information Technology">
+        <div class="college-info">
+            <h2>College of Information Technology</h2>
+            <p>A College of Information Technology is a part of a university that teaches students how to use computers and technology to create, manage, and improve digital systems, preparing them for careers in programming, networking, cybersecurity, and IT support.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="7.jpg.jpg" alt="College of Midwifery">
+        <div class="college-info">
+            <h2>College of Midwifery</h2>
+            <p>A College of Midwifery is a part of a university or school that trains students to care for pregnant women, assist in childbirth, and support mothers and newborn babies before and after delivery.</p>
+        </div>
+    </div>
+
+    <div class="college-card">
+        <img src="8.jpg.jpg" alt="College of Teacher Education">
+        <div class="college-info">
+            <h2>College of Teacher Education</h2>
+            <p>A College of Teacher Education is a part of a university that prepares students to become teachers by training them in teaching methods, subject knowledge, and classroom management.</p>
+        </div>
+    </div>
+
+    <div class="enrollment-container">
+        <h2>Student Enrollment Form</h2>
+        <form id="enrollForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="gmail">Gmail Address:</label>
+                <input type="email" id="gmail" placeholder="example@gmail.com" required>
+            </div>
+            <button type="submit" class="enroll-submit">Submit Enrollment</button>
+        </form>
+
+        <div id="success-notice">
+            Successfully enrolled! Welcome to UEP.
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <ul>
+                <li>Marunong At Malinis</li>
+                <li>Mabait Lng</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>09676737712</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Information</h3>
+            <ul>
+                <li>Messenger</li>
+                <li>Email</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 University of Eastern Pangasinan</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('enrollForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const notice = document.getElementById('success-notice');
+        notice.style.display = 'block';
+        this.reset();
+        setTimeout(function() {
+            notice.style.display = 'none';
+        }, 5000);
+    });
+</script>
+
+</body>
+</html>

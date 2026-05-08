@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEP News | Canarvacanan, Binalonan</title>
+    <style>
+        :root {
+            --uep-blue: #001f3f;
+            --uep-gold: #ffcc00;
+            --bg-gray: #f2f4f7;
+        }
+
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            background-color: var(--bg-gray); 
+        }
+
+        /* UEP Themed Header */
+        header { 
+            background-color: var(--uep-blue);
+            color: white; 
+            padding: 40px 20px; 
+            border-bottom: 5px solid var(--uep-gold);
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .btn-home {
+            color: var(--uep-gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Grid System */
+        .container { 
+            max-width: 1100px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+
+        .news-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+
+        /* Card Design */
+        .card { 
+            background: white; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            background: #ccc;
+        }
+
+        .card-content { padding: 20px; flex-grow: 1; }
+
+        .location-tag {
+            font-size: 0.75rem;
+            color: #777;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .card h3 { 
+            margin: 0 0 10px 0; 
+            color: var(--uep-blue); 
+            font-size: 1.2rem; 
+        }
+
+        .card p { 
+            color: #444; 
+            font-size: 0.9rem; 
+            line-height: 1.6; 
+        }
+
+        /* --- FOOTER STYLING TO MATCH IMAGE --- */
+        .footer {
+            background-color: #1a1a1a; /* Dark grey/black background */
+            color: #b3b3b3; /* Light grey text */
+            padding: 60px 20px 30px 20px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1100px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .footer-col {
+            margin-bottom: 30px;
+            min-width: 200px;
+        }
+        .footer-col h3 {
+            color: #ffcc00; /* Yellow/Gold header */
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border: none;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .footer-bottom p {
+            color: #ffffff;
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="index.html" class="btn-home">← Back to Home</a>
+        <h1>University of Eastern Pangasinan</h1>
+        <p>Canarvacanan, Binalonan, Pangasinan</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="news-grid">
+        
+        <div class="card">
+            <img src="684832176_1299916991509068_7293274602789339114_n.jpg" class="card-img" alt="Blood Donation">
+            <div class="card-content">
+                <span class="location-tag">Donation Drive | University main building</span>
+                <h3>Project Kadugo, Kalinga</h3>
+                <p>The University of Eastern Pangasinan (UEP) hosted a blood donation activity on April 29, 2026, through the Pangasinan Civil Society Organization Network, Inc. (PCSON), as part of the organization's "Project Kadugo, Kalinga" under the provincial initiative Serbisyong Ang Galing.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="686344012_1987686445206201_1611114323889939325_n.jpg" class="card-img" alt="World University Rankings">
+            <div class="card-content">
+                <span class="location-tag">WURI 2026</span>
+                <h3>Top 322 at WURI 2026's Global Top 500</h3>
+                <p>From rank 398th at the World University Rankings for Innovation (WURI) 2025, the University of Eastern Pangasinan (UEP) advances to rank 322nd at WURI 2026's Global Top 500.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="682419382_988025950283368_5544886869354134812_n.jpg" class="card-img" alt="NSTP orientaion">
+            <div class="card-content">
+                <span class="location-tag">Leadership and Community service</span>
+                <h3>UEP gears up NSTP students for leadership</h3>
+                <p>Orientation for NSTP students held on January 22, 2026, aiming to prepare students for meaningful participation in community engagement and nation-building.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="688041155_1738992027084199_2963940974485969052_n.jpg" class="card-img" alt="Float Parade">
+            <div class="card-content">
+                <span class="location-tag">UEP Campus Ground</span>
+                <h3>Is your creativity ready to roll?</h3>
+                <p>UEPians celebrate the 20th Founding Anniversary with a feast of colors and craftsmanship in this year's Float Parade!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="691726567_1681358193102154_5346329077526004694_n.jpg" class="card-img" alt="Rescue 177">
+            <div class="card-content">
+                <span class="location-tag">Disaster Preparedness Training</span>
+                <h3>UEP partners with Rescue 177</h3>
+                <p>Students equipped with essential life-saving skills during the NSTP Disaster Emergency Preparedness Training on 6-7 October 2025.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="684822889_2679802232420299_4250272335775752263_n.jpg" class="card-img" alt="CHED RAISE">
+            <div class="card-content">
+                <span class="location-tag">Societal Empowerment</span>
+                <h3>CHED RAISE 2026 National Summit</h3>
+                <p>UEP-CIT participated in the summit held in Iloilo to advance responsible AI integration in higher education.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <ul>
+                <li>Marunong At Malinis</li>
+                <li>Mabait Lng</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>09676737712</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Information</h3>
+            <ul>
+                <li>Messenger</li>
+                <li>Email</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 UNIVERSITY OF EASTERN PANGASINAN<br>
+        Canarvacanan Road, Binalonan, 2432 Pangasinan</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- SOLID NAVBAR STYLE --- */
+header {
+    width: 100%;
+    background: #002b5b; /* Solid blue background */
+    position: sticky; /* Mananatili sa taas habang nag-sscroll */
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0; /* Space sa taas at baba ng logo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1400px; /* Mas malapad para sa solid bar look */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Inalis ang border-radius at background dito para sa header ang kulay */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.circular-logo {
+    height: 60px; /* Lakihan natin nang kaunti para kitang-kita */
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase; /* Para magmukhang professional menu */
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #FFD700; /* UEP Gold */
+}
+
+.portal-btn {
+    background: white;
+    color: #002b5b;
+    padding: 10px 25px;
+    border-radius: 4px; /* Rectangular button na may kaunting kanto */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.portal-btn:hover {
+    background: #FFD700;
+}
+
+/* --- Small Video Hero Section --- */
+.hero-small {
+    padding: 80px 5%;
+    background-color: #fcfcfc; /* Light background para malinis */
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Hahatiin sa dalawa: video at text */
+    gap: 40px;
+    align-items: center;
+}
+
+/* Part ng Video Box (Maliit lang na container) */
+.video-box {
+    width: 100%;
+    border-radius: 20px; /* Rounded corners gaya ng gusto mo */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.content-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Text side styling */
+.hero-text-side h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.hero-text-side p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-apply {
+    padding: 12px 30px;
+    background-color: #FFD700;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #222;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 8px; color: #ccc; }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.created-by { color: #FFD700; font-weight: bold; margin-top: 5px; }
